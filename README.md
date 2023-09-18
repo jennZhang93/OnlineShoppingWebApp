@@ -1,24 +1,10 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-* System dependencies
-* Configuration
-* Database creation
-* Database initialization
-* How to run the test suite
-* Services (job queues, cache servers, search engines, etc.)
-* Deployment instructions
+# README 
 
 ## online shopping
 - [x] POST: new acc
 - [x] PATCH: add new item to cart
 - [x] GET: display carts item, and display all products
-- [ ] DELETE: remove from cart
+- [x] DELETE: delete my account
 - ~~POST 2.1: unknown stocks - bulk add requestcheck if stocks have enough items - tell userwhether it's added or not enough stocks.~~
 - [ ] POST 2.2:
   - user wants to checkout

@@ -51,4 +51,16 @@ router.patch("/cart", async (req, res) => {
         res.status(500).send('Internal Server Error');
 }});
 
+///////////////delete item from cart :id/////////////////
+router.delete("/", async (req, res) => {
+    try {
+		const query = { email: myEmail };       
+        const result = await collection.deleteOne(query); 
+        res.send(result).status(200);
+        console.log(result);
+    } catch (err) {
+        console.error('ERROR delete acc:', err);
+        res.status(500).send('Internal Server Error');
+}});
+
 export default router;

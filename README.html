@@ -41,25 +41,12 @@
     </head>
     <body class="vscode-body vscode-light">
         <h1 id="readme">README</h1>
-<p>This README would normally document whatever steps are necessary to get the
-application up and running.</p>
-<p>Things you may want to cover:</p>
-<ul>
-<li>Ruby version</li>
-<li>System dependencies</li>
-<li>Configuration</li>
-<li>Database creation</li>
-<li>Database initialization</li>
-<li>How to run the test suite</li>
-<li>Services (job queues, cache servers, search engines, etc.)</li>
-<li>Deployment instructions</li>
-</ul>
 <h2 id="online-shopping">online shopping</h2>
 <ul class="contains-task-list">
 <li class="task-list-item enabled"><input class="task-list-item-checkbox" checked=""type="checkbox"> POST: new acc</li>
 <li class="task-list-item enabled"><input class="task-list-item-checkbox" checked=""type="checkbox"> PATCH: add new item to cart</li>
 <li class="task-list-item enabled"><input class="task-list-item-checkbox" checked=""type="checkbox"> GET: display carts item, and display all products</li>
-<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> DELETE: remove from cart</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" checked=""type="checkbox"> DELETE: delete my account</li>
 <li><s>POST 2.1: unknown stocks - bulk add requestcheck if stocks have enough items - tell userwhether it's added or not enough stocks.</s></li>
 <li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> POST 2.2:
 <ul>
@@ -73,22 +60,17 @@ application up and running.</p>
 <h2 id="db-schema">DB schema</h2>
 <h3 id="products">Products</h3>
 <ul>
-<li>product id</li>
-<li>serving zipcode</li>
-<li>product name</li>
-<li>product price</li>
+<li>product id: string</li>
+<li>not serving zipcode: integer</li>
+<li>product name: string</li>
+<li>product price: float</li>
 </ul>
 <h3 id="users">Users</h3>
 <ul>
-<li>user id</li>
-<li>user email</li>
-<li>password</li>
-<li>zipcode</li>
-</ul>
-<h3 id="cart">Cart</h3>
-<ul>
-<li>owner's user id</li>
-<li>product id</li>
+<li>user email: string</li>
+<li>password: string</li>
+<li>zipcode: integer</li>
+<li>cart: Array</li>
 </ul>
 <h2 id="requirements">Requirements</h2>
 <p>Using a backend or server framework of your choice, create a REST API and accompanying database with the following endpoints:</p>
