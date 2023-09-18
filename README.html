@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>README</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="readme">README</h1>
+<p>This README would normally document whatever steps are necessary to get the
+application up and running.</p>
+<p>Things you may want to cover:</p>
+<ul>
+<li>Ruby version</li>
+<li>System dependencies</li>
+<li>Configuration</li>
+<li>Database creation</li>
+<li>Database initialization</li>
+<li>How to run the test suite</li>
+<li>Services (job queues, cache servers, search engines, etc.)</li>
+<li>Deployment instructions</li>
+</ul>
+<h2 id="online-shopping">online shopping</h2>
+<ul class="contains-task-list">
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" checked=""type="checkbox"> POST: new acc</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" checked=""type="checkbox"> PATCH: add new item to cart</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" checked=""type="checkbox"> GET: display carts item, and display all products</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> DELETE: remove from cart</li>
+<li><s>POST 2.1: unknown stocks - bulk add requestcheck if stocks have enough items - tell userwhether it's added or not enough stocks.</s></li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> POST 2.2:
+<ul>
+<li>user wants to checkout</li>
+<li>check each item if it ships to user's location</li>
+<li>failed: display all items that cannot beOshipped to user's location</li>
+<li>success: display checkout success message</li>
+</ul>
+</li>
+</ul>
+<h2 id="db-schema">DB schema</h2>
+<h3 id="products">Products</h3>
+<ul>
+<li>product id</li>
+<li>serving zipcode</li>
+<li>product name</li>
+<li>product price</li>
+</ul>
+<h3 id="users">Users</h3>
+<ul>
+<li>user id</li>
+<li>user email</li>
+<li>password</li>
+<li>zipcode</li>
+</ul>
+<h3 id="cart">Cart</h3>
+<ul>
+<li>owner's user id</li>
+<li>product id</li>
+</ul>
+<h2 id="requirements">Requirements</h2>
+<p>Using a backend or server framework of your choice, create a REST API and accompanying database with the following endpoints:</p>
+<ul>
+<li>generic POST endpoint where someone can write an item to the database through a request</li>
+<li>generic GET endpoint where someone can retrieve an item from the database in a response</li>
+<li>generic DELETE endpoint where someone can delete an item from the database</li>
+<li>creative POST endpoint that, given an input, performs some operation on the input and writes the result to the database</li>
+</ul>
+<p>As this is very open ended, you can be creative about the context for this API (e.g. online recipe tracker, library book returns, etc) and the structure of database items.</p>
+<h2 id="submission">Submission</h2>
+<p>Submit your code for the API and the database. Also include a short video demonstration where you invoke your API through requests using a tool like Postman (<a href="https://www.postman.com/downloads/">https://www.postman.com/downloads/</a>) or Insomnia (<a href="https://insomnia.rest/">https://insomnia.rest/</a>)</p>
+
+        
+        
+    </body>
+    </html>

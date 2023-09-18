@@ -15,11 +15,12 @@ Things you may want to cover:
 * Deployment instructions
 
 ## online shopping
-- POST: add to cart
-- GET: display carts item
-- DELETE: remove from cart
-- POST 2.1: unknown stocks - bulk add requestcheck if stocks have enough items - tell userwhether it's added or not enough stocks.
-- POST 2.2:
+- [x] POST: new acc
+- [x] PATCH: add new item to cart
+- [x] GET: display carts item, and display all products
+- [ ] DELETE: remove from cart
+- ~~POST 2.1: unknown stocks - bulk add requestcheck if stocks have enough items - tell userwhether it's added or not enough stocks.~~
+- [ ] POST 2.2:
   - user wants to checkout
   - check each item if it ships to user's location
   - failed: display all items that cannot beOshipped to user's location
