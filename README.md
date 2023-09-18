@@ -28,18 +28,15 @@ Things you may want to cover:
 
 ## DB schema
 ### Products
-- product id
-- serving zipcode
-- product name
-- product price
+- product id: string
+- not serving zipcode: integer
+- product name: string
+- product price: float
 ### Users
-- user id
-- user email
-- password
-- zipcode
-### Cart
-- owner's user id 
-- product id
+- user email: string
+- password: string
+- zipcode: integer
+- cart: Array
 
 
 ## Requirements
