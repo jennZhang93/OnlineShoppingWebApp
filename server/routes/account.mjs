@@ -5,7 +5,7 @@ import { ObjectId } from "mongodb";
 const router = express.Router();
 let collection = db.collection("accounts");
 let orderCollection = db.collection("orders");
-let myEmail = 'uiuc1@uiuc.com'; //null; //process.env.ADMIN_EMAIL;
+let myEmail = null; //process.env.ADMIN_EMAIL;
 
 ///////////////create my acc /////////////////
 router.post("/", async (req, res) => {
