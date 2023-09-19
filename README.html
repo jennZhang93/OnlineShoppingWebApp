@@ -48,12 +48,12 @@
 <li class="task-list-item enabled"><input class="task-list-item-checkbox" checked=""type="checkbox"> GET: display carts item, and display all products</li>
 <li class="task-list-item enabled"><input class="task-list-item-checkbox" checked=""type="checkbox"> DELETE: delete my account</li>
 <li><s>POST 2.1: unknown stocks - bulk add requestcheck if stocks have enough items - tell userwhether it's added or not enough stocks.</s></li>
-<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> POST 2.2:
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" checked=""type="checkbox"> POST 2.2:
 <ul>
-<li>user wants to checkout</li>
+<li>user wants to checkout/POST new order</li>
 <li>check each item if it ships to user's location</li>
-<li>failed: display all items that cannot beOshipped to user's location</li>
-<li>success: display checkout success message</li>
+<li>display all items that cannot be shipped to user's location</li>
+<li>and display checkout success message with items that can be shipped and total price</li>
 </ul>
 </li>
 </ul>
@@ -71,6 +71,12 @@
 <li>password: string</li>
 <li>zipcode: integer</li>
 <li>cart: Array</li>
+</ul>
+<h3 id="orders">Orders</h3>
+<ul>
+<li>user email: string</li>
+<li>product total price: float</li>
+<li>purchased items: Array of id</li>
 </ul>
 <h2 id="requirements">Requirements</h2>
 <p>Using a backend or server framework of your choice, create a REST API and accompanying database with the following endpoints:</p>

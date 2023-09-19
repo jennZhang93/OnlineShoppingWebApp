@@ -6,11 +6,11 @@
 - [x] GET: display carts item, and display all products
 - [x] DELETE: delete my account
 - ~~POST 2.1: unknown stocks - bulk add requestcheck if stocks have enough items - tell userwhether it's added or not enough stocks.~~
-- [ ] POST 2.2:
-  - user wants to checkout
+- [x] POST 2.2:
+  - user wants to checkout/POST new order
   - check each item if it ships to user's location
-  - failed: display all items that cannot beOshipped to user's location
-  - success: display checkout success message
+  - display all items that cannot be shipped to user's location
+  - and display checkout success message with items that can be shipped and total price
 
 ## DB schema
 ### Products
@@ -23,6 +23,12 @@
 - password: string
 - zipcode: integer
 - cart: Array
+  
+### Orders
+- user email: string
+- product total price: float
+- purchased items: Array of id
+
 
 
 ## Requirements
