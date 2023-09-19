@@ -1,5 +1,5 @@
 # README 
-
+PS: ignore client folder 
 ## online shopping
 - [x] POST: new acc
 - [x] PATCH: add new item to cart
